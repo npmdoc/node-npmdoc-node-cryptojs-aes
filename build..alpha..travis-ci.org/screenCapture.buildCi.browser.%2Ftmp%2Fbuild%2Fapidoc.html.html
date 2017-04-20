@@ -1,0 +1,484 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/chengxianga2008/node-cryptojs-aes">node-cryptojs-aes (v0.4.0)</a>
+</h1>
+<h4>Standalone cryptographic library. A minimalist port of cryptojs javascript library to node.js, that supports AES symmetric key cryptography. node-cryptojs-aes works great on frontend data masking and unmasking.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-cryptojs-aes">module node-cryptojs-aes</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-cryptojs-aes.</span>CryptoJS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-cryptojs-aes.</span>CryptoJS.AES</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-cryptojs-aes.</span>JsonFormatter</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-cryptojs-aes.CryptoJS">module node-cryptojs-aes.CryptoJS</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-cryptojs-aes.CryptoJS.EvpKDF">
+            function <span class="apidocSignatureSpan">node-cryptojs-aes.CryptoJS.</span>EvpKDF
+            <span class="apidocSignatureSpan">(password, salt, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-cryptojs-aes.CryptoJS.HmacMD5">
+            function <span class="apidocSignatureSpan">node-cryptojs-aes.CryptoJS.</span>HmacMD5
+            <span class="apidocSignatureSpan">(message, key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-cryptojs-aes.CryptoJS.MD5">
+            function <span class="apidocSignatureSpan">node-cryptojs-aes.CryptoJS.</span>MD5
+            <span class="apidocSignatureSpan">(message, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-cryptojs-aes.CryptoJS.</span>AES</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-cryptojs-aes.CryptoJS.</span>algo</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-cryptojs-aes.CryptoJS.</span>enc</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-cryptojs-aes.CryptoJS.</span>format</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-cryptojs-aes.CryptoJS.</span>kdf</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-cryptojs-aes.CryptoJS.</span>lib</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-cryptojs-aes.CryptoJS.</span>mode</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-cryptojs-aes.CryptoJS.</span>pad</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-cryptojs-aes.CryptoJS.AES">module node-cryptojs-aes.CryptoJS.AES</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-cryptojs-aes.CryptoJS.AES.decrypt">
+            function <span class="apidocSignatureSpan">node-cryptojs-aes.CryptoJS.AES.</span>decrypt
+            <span class="apidocSignatureSpan">(ciphertext, key, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-cryptojs-aes.CryptoJS.AES.encrypt">
+            function <span class="apidocSignatureSpan">node-cryptojs-aes.CryptoJS.AES.</span>encrypt
+            <span class="apidocSignatureSpan">(message, key, cfg)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-cryptojs-aes.JsonFormatter">module node-cryptojs-aes.JsonFormatter</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-cryptojs-aes.JsonFormatter.parse">
+            function <span class="apidocSignatureSpan">node-cryptojs-aes.JsonFormatter.</span>parse
+            <span class="apidocSignatureSpan">(jsonStr)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-cryptojs-aes.JsonFormatter.stringify">
+            function <span class="apidocSignatureSpan">node-cryptojs-aes.JsonFormatter.</span>stringify
+            <span class="apidocSignatureSpan">(cipherParams)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-cryptojs-aes" id="apidoc.module.node-cryptojs-aes">module node-cryptojs-aes</a></h1>
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-cryptojs-aes.CryptoJS" id="apidoc.module.node-cryptojs-aes.CryptoJS">module node-cryptojs-aes.CryptoJS</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-cryptojs-aes.CryptoJS.EvpKDF" id="apidoc.element.node-cryptojs-aes.CryptoJS.EvpKDF">
+        function <span class="apidocSignatureSpan">node-cryptojs-aes.CryptoJS.</span>EvpKDF
+        <span class="apidocSignatureSpan">(password, salt, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">EvpKDF = function (password, salt, cfg) {
+    return EvpKDF.create(cfg).compute(password, salt);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+     *
+     * @return {WordArray} The derived key.
+     *
+     * @static
+     *
+     * @example
+     *
+     *     var key = CryptoJS.<span class="apidocCodeKeywordSpan">EvpKDF</span>(password, salt);
+     *     var key = CryptoJS.EvpKDF(password, salt, { keySize: 8 });
+     *     var key = CryptoJS.EvpKDF(password, salt, { keySize: 8, iterations: 1000 });
+     */
+    C.EvpKDF = function (password, salt, cfg) {
+        return EvpKDF.create(cfg).compute(password, salt);
+    };
+}());
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-cryptojs-aes.CryptoJS.HmacMD5" id="apidoc.element.node-cryptojs-aes.CryptoJS.HmacMD5">
+        function <span class="apidocSignatureSpan">node-cryptojs-aes.CryptoJS.</span>HmacMD5
+        <span class="apidocSignatureSpan">(message, key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">HmacMD5 = function (message, key) {
+    return new C_algo.HMAC.init(hasher, key).finalize(message);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-cryptojs-aes.CryptoJS.MD5" id="apidoc.element.node-cryptojs-aes.CryptoJS.MD5">
+        function <span class="apidocSignatureSpan">node-cryptojs-aes.CryptoJS.</span>MD5
+        <span class="apidocSignatureSpan">(message, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">MD5 = function (message, cfg) {
+    return new hasher.init(cfg).finalize(message);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ *
+ * @return {WordArray} The hash.
+ *
+ * @static
+ *
+ * @example
+ *
+ *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">MD5</span>('message');
+ *     var hash = CryptoJS.MD5(wordArray);
+ */
+C.MD5 = Hasher._createHelper(MD5);
+
+/**
+ * Shortcut function to the HMAC's object interface.
+ *
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-cryptojs-aes.CryptoJS.AES" id="apidoc.module.node-cryptojs-aes.CryptoJS.AES">module node-cryptojs-aes.CryptoJS.AES</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-cryptojs-aes.CryptoJS.AES.decrypt" id="apidoc.element.node-cryptojs-aes.CryptoJS.AES.decrypt">
+        function <span class="apidocSignatureSpan">node-cryptojs-aes.CryptoJS.AES.</span>decrypt
+        <span class="apidocSignatureSpan">(ciphertext, key, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decrypt = function (ciphertext, key, cfg) {
+    return selectCipherStrategy(key).decrypt(cipher, ciphertext, key, cfg);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+##### Part 2
+Last step, data is unmasked by calling browser AES script, take passphrase and JsonFormatter as parameter
+```javascript
+// take out masked data from div tag
+var encrypted_json_str = $("#data_store").text();
+		
+// decrypt data with encrypted json string, passphrase string and custom JsonFormatter
+var decrypted = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(encrypted_json_str, r_pass_base64, { format: JsonFormatter
+ });
+
+// convert to Utf8 format unmasked data
+var decrypted_str = CryptoJS.enc.Utf8.stringify(decrypted);
+
+console.log("decrypted string: " + decrypted_str);
+		
+// convert into unmasked data and store in the div tag
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-cryptojs-aes.CryptoJS.AES.encrypt" id="apidoc.element.node-cryptojs-aes.CryptoJS.AES.encrypt">
+        function <span class="apidocSignatureSpan">node-cryptojs-aes.CryptoJS.AES.</span>encrypt
+        <span class="apidocSignatureSpan">(message, key, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">encrypt = function (message, key, cfg) {
+    return selectCipherStrategy(key).encrypt(cipher, message, key, cfg);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// message to cipher
+var message = "I love maccas!";
+
+// encrypt plain text with passphrase and custom json serialization format, return CipherParams object
+// r_pass_base64 is the passphrase generated from first stage
+// message is the original plain text
+
+var encrypted = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>(message, r_pass_base64, { format: JsonFormatter });
+
+// convert CipherParams object to json string for transmission
+var encrypted_json_str = encrypted.toString();
+
+console.log("serialized CipherParams object: ");
+console.log(encrypted_json_str);
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-cryptojs-aes.JsonFormatter" id="apidoc.module.node-cryptojs-aes.JsonFormatter">module node-cryptojs-aes.JsonFormatter</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-cryptojs-aes.JsonFormatter.parse" id="apidoc.element.node-cryptojs-aes.JsonFormatter.parse">
+        function <span class="apidocSignatureSpan">node-cryptojs-aes.JsonFormatter.</span>parse
+        <span class="apidocSignatureSpan">(jsonStr)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parse = function (jsonStr) {
+		// parse json string
+		var jsonObj = JSON.parse(jsonStr);
+		
+		// extract ciphertext from json object, and create cipher params object
+		var cipherParams = CryptoJS.lib.CipherParams.create({
+			ciphertext: CryptoJS.enc.Base64.parse(jsonObj.ct)
+		});
+		
+		// optionally extract iv and salt
+		if (jsonObj.iv) {
+			cipherParams.iv = CryptoJS.enc.Hex.parse(jsonObj.iv);
+		}
+
+		if (jsonObj.s) {
+			cipherParams.salt = CryptoJS.enc.Hex.parse(jsonObj.s);
+		}
+		
+		return cipherParams;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+		// stringify json object
+		return JSON.stringify(jsonObj)
+	},
+
+	parse: function (jsonStr) {
+		// parse json string
+		var jsonObj = JSON.<span class="apidocCodeKeywordSpan">parse</span>(jsonStr);
+		
+		// extract ciphertext from json object, and create cipher params object
+		var cipherParams = CryptoJS.lib.CipherParams.create({
+			ciphertext: CryptoJS.enc.Base64.parse(jsonObj.ct)
+		});
+		
+		// optionally extract iv and salt
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-cryptojs-aes.JsonFormatter.stringify" id="apidoc.element.node-cryptojs-aes.JsonFormatter.stringify">
+        function <span class="apidocSignatureSpan">node-cryptojs-aes.JsonFormatter.</span>stringify
+        <span class="apidocSignatureSpan">(cipherParams)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stringify = function (cipherParams) {
+		// create json object with ciphertext
+		var jsonObj = {
+			ct: cipherParams.ciphertext.toString(CryptoJS.enc.Base64)
+		};
+		
+		// optionally add iv and salt
+		if (cipherParams.iv) {
+			jsonObj.iv = cipherParams.iv.toString();
+		}
+		
+		if (cipherParams.salt) {
+			jsonObj.s = cipherParams.salt.toString();
+		}
+
+		// stringify json object
+		return JSON.stringify(jsonObj)
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		}
+		
+		if (cipherParams.salt) {
+			jsonObj.s = cipherParams.salt.toString();
+		}
+
+		// stringify json object
+		return JSON.<span class="apidocCodeKeywordSpan">stringify</span>(jsonObj)
+	},
+
+	parse: function (jsonStr) {
+		// parse json string
+		var jsonObj = JSON.parse(jsonStr);
+		
+		// extract ciphertext from json object, and create cipher params object
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
